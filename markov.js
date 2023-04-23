@@ -33,7 +33,7 @@ class MarkovMachine {
 
   /** return random text from chains */
   static choice(ar) {
-    return ar[Math.floor(Math.random * ar.length)]
+    return ar[Math.floor(Math.random() * ar.length)]
   }
 
   makeText(numWords = 100) {
