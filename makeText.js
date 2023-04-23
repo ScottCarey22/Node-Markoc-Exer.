@@ -2,12 +2,12 @@
 
 const fs = require('fs');
 const markov = require('./markov')
-const axios = reuire("axios")
+const axios = require("axios")
 const process = require("process")
 
 // make markov machine from input text and generate text from it 
 
-function generatetext(text) {
+function generateText(text) {
     let mm = new markov.MarkovMachine(text);
     console.log(mm.maketext());
 }
