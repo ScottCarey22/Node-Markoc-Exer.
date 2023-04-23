@@ -22,7 +22,7 @@ class MarkovMachine {
 
     for (let i = 0; i < this.words.length; i += 1) {
       let word = this.words[i]
-      let nextword = this.words[i + 1] || null;
+      let nextWord = this.words[i + 1] || null;
 
       if (chains.has(word)) chains.get(word).push(nextWord);
       else chains.set(word, [nextWord]);
