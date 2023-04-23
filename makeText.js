@@ -9,7 +9,7 @@ const process = require("process")
 
 function generateText(text) {
     let mm = new markov.MarkovMachine(text);
-    console.log(mm.maketext());
+    console.log(mm.makeText());
 }
 
 // read files and generate from it
